@@ -1,0 +1,163 @@
+using System;
+
+namespace gcdeliverable2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool trigger = false;
+            while (trigger == false)
+            {
+
+                Console.WriteLine("Hi. Welcome to our Buffet. All you can eat for $9.99! We only charge extra for coffee. How many people are in your group? Please, parties of 6 or lower. ");
+                double people = int.Parse(Console.ReadLine());
+                trigger = false;
+                if (people > 6)
+                {
+                    if (trigger == false)
+                        Console.WriteLine("Sorry, parties of 6 or less. Try Dennys. ");
+                    break;
+                }
+                string first = "Okay, so that's ";
+                string second = "coffees and ";
+                string third = "waters.I'll be right back. Feel free to grab your food!";
+
+
+                int c = 1;
+                int w = 1;
+                double buffet = 9.95;
+                double coffee = (c * 2.00);
+                double total = (people * buffet);
+                double grandtotal = (total + coffee);
+
+
+
+
+                Console.WriteLine("Please follow me and take a seat.");
+                Console.WriteLine("Let's get everyone started with some drinks. We've got water or coffee.");
+
+                Console.WriteLine("Alright, person number 1, water or coffee?");
+                string choice = Console.ReadLine();
+
+
+                if (choice == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice != "coffee")
+                    if (choice != "water")
+                        Console.WriteLine("that is not a choice, please try to pay attention");
+                if (people < 2)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 2)
+                    Console.WriteLine("Here's your bill! Total price: " + grandtotal);
+
+                if (people >= 2)
+
+                    Console.WriteLine("Alright, person number 2, water or coffee?");
+                string choice2 = Console.ReadLine();
+                if (choice2 == "coffee") ++c;
+                if (choice2 == "water") ++w;
+
+                if (choice2 == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice2 == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice2 != "coffee")
+                    if (choice2 != "water")
+                        Console.Write("that is not a choice, please try to pay attention");
+                if (people < 3)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 3)
+                    Console.WriteLine("Here's your bill! Total price: " + grandtotal);
+
+                if (people >= 3)
+
+                    Console.WriteLine("Alright, person number 3, water or coffee?");
+                string choice3 = Console.ReadLine();
+                if (choice3 == "coffee") ++c;
+                if (choice3 == "water") ++w;
+
+                if (choice3 == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice3 == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice3 != "coffee")
+                    if (choice3 != "water")
+                        Console.WriteLine("that is not a choice, please try to pay attention");
+                if (people < 4)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 4)
+                    Console.WriteLine("Here's your bill! Total price: " + grandtotal);
+
+                if (people >= 4)
+
+                    Console.WriteLine("Alright, person number 4, water or coffee?");
+                string choice4 = Console.ReadLine();
+                if (choice4 == "coffee") ++c;
+                if (choice4 == "water") ++w;
+
+                if (choice4 == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice4 == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice4 != "coffee")
+                    if (choice4 != "water")
+                        Console.WriteLine("that is not a choice, please try to pay attention");
+                if (people < 5)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 5)
+                    Console.WriteLine("Here's your bill! Total price: " + grandtotal);
+
+                if (people >= 5)
+
+                    Console.WriteLine("Alright, person number 5, water or coffee?");
+                string choice5 = Console.ReadLine();
+                if (choice5 == "coffee") ++c;
+                if (choice5 == "water") ++w;
+
+                if (choice5 == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice5 == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice5 != "coffee")
+                    if (choice5 != "water")
+                        Console.WriteLine("that is not a choice, please try to pay attention");
+                if (people < 6)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 6)
+                    Console.WriteLine("Here's your bill! Total price: " + grandtotal);
+
+                if (people >= 6)
+
+                    Console.WriteLine("Alright, person number 6, water or coffee?");
+                string choice6 = Console.ReadLine();
+
+                if (choice6 == "coffee") ++c;
+                if (choice6 == "water") ++w;
+
+                if (choice6 == "coffee")
+                    Console.WriteLine("coffee, good choice");
+                if (choice6 == "water")
+                    Console.WriteLine("water, good choice");
+                if (choice6 != "coffee")
+                    if (choice6 != "water")
+                        Console.WriteLine("that is not a choice, please try to pay attention");
+                if (people < 7)
+                    Console.WriteLine(String.Concat(first, +c, second + w, third));
+                if (people < 7)
+                    Console.Write("Here's your bill! Total price: $ " + grandtotal);
+
+
+
+
+
+
+
+
+            }
+        }
+    }
+}
+    
